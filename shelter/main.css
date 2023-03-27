@@ -225,15 +225,15 @@
   width: 261px;
   height: 52px;
   cursor: pointer;
-}
-
-.pets__btn a {
+  text-align: center;
+  padding-top: 26px;
   font-weight: 400;
   font-size: 17px;
   line-height: 130%;
   color: #292929;
   text-decoration: none;
 }
+
 
 .pets__btn:hover {
   background-color: #FDDCC4;
