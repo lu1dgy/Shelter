@@ -463,6 +463,10 @@
   padding: 23px 40px 0 40px;
 }
 
+.footer a {
+  text-decoration: none;
+}
+
 .footer__image {
   width: 300px;
   height: 310px;
