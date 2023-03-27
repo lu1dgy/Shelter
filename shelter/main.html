@@ -9,16 +9,18 @@
   </head>
   <body class='body'>
     <header class='header'>
-      <div class='header__logo-block'>
-        <p class='header__name'>Cozy House</p>
-        <p class='header__description'>Shelter for pets in Boston</p>
-      </div>
+      <a href='#'>
+        <div class='header__logo-block'>
+          <p class='header__name'>Cozy House</p>
+          <p class='header__description'>Shelter for pets in Boston</p>
+        </div>
+      </a>
       <nav class='header__nav'>
         <ul class='header__list'>
           <li class='header__list-item header__list-item_active'><a href='#'>About the shelter</a></li>
           <li class='header__list-item'><a href='pets.html'>Our pets</a></li>
-          <li class='header__list-item'><a href='#'>Help the shelter</a></li>
-          <li class='header__list-item'><a href='#'>Contacts</a></li>
+          <li class='header__list-item'><a href='#help'>Help the shelter</a></li>
+          <li class='header__list-item'><a href='#contacts'>Contacts</a></li>
         </ul>
       </nav>
     </header>
@@ -66,9 +68,9 @@
           </div>
           <button class='slider_arrow'>&#8594;</button>
         </div>
-        <button class='pets__btn'>Get to know the rest</button>
+        <button class='pets__btn'><a href='pets.html'>Get to know the rest</a></button>
       </section>
-      <section class='help'>
+      <section class='help' id='help'>
         <h2 class='help__heading'>How you can help our shelter</h2>
         <div class='help__long'>
           <div>
@@ -118,14 +120,14 @@
           <p class='donation__subheading'>Name of the bank / Type of bank account</p>
           <div class='donation__card'>
             <img class='donation__card-img' src='./images/credit-card.svg' alt='cardIcon'>
-            <p class='donation__number'>8380 2880 8028 8791 7435</p>
+            <a class='donation__number' href='#'> 8380 2880 8028 8791 7435 </a>
           </div>
           <p class='donation__text'>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam.
             Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
         </div>
       </section>
     </main>
-    <footer class='footer'>
+    <footer class='footer' id='contacts'>
       <div class='footer__contacts'>
         <h3 class='footer__heading'>For questions and suggestions</h3>
         <div>

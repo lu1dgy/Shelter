@@ -17,6 +17,14 @@
   background-image: linear-gradient(90deg, rgba(68, 54, 45, 1) 0%, rgba(50, 43, 41, 1) 47%, rgba(33, 31, 31, 1) 100%);
 }
 
+.header a {
+  text-decoration: none;
+}
+
+.header_pets a {
+  text-decoration: none;
+}
+
 .header_pets {
   display: flex;
   justify-content: space-between;
@@ -217,6 +225,14 @@
   width: 261px;
   height: 52px;
   cursor: pointer;
+}
+
+.pets__btn a {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #292929;
+  text-decoration: none;
 }
 
 .pets__btn:hover {
@@ -422,6 +438,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 115%;
+  text-decoration: none;
 }
 
 .donation__text {
