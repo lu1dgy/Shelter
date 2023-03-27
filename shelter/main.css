@@ -17,6 +17,14 @@
   background-image: linear-gradient(90deg, rgba(68, 54, 45, 1) 0%, rgba(50, 43, 41, 1) 47%, rgba(33, 31, 31, 1) 100%);
 }
 
+.header_pets {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px 30px 40px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
 .header__name {
   color: #F1CDB3;
   font-style: normal;
@@ -26,8 +34,25 @@
 
 }
 
+.header__name_pets {
+  color: #545454;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  font-size: 32px;
+}
+
 .header__description {
   color: #fff;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+
+.header__description_pets {
+  color: #292929;
   font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
@@ -57,8 +82,20 @@
   text-decoration: none;
 }
 
+.header__list-item_pets a {
+  color: #545454;
+  text-decoration: none;
+}
+
 .header__list-item_active a {
   color: #FAFAFA;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #F1CDB3;
+
+}
+
+.header__list-item_active_pets a {
+  color: #292929;
   padding-bottom: 5px;
   border-bottom: 3px solid #F1CDB3;
 
@@ -81,6 +118,7 @@
   flex-direction: column;
   gap: 42px;
   justify-content: center;
+  margin-bottom: 79px;
 }
 
 .not-only__heading {
@@ -206,9 +244,19 @@
   border-color: #FDDCC4;
 }
 
+.slider_arrow:disabled {
+  background-color: transparent;
+  border: 2px solid #CDCDCD;
+}
+
 .cards {
   display: flex;
   gap: 90px;
+  flex-wrap: wrap;
+}
+
+.cards_pets {
+  gap: 40px;
 }
 
 .card {
@@ -231,11 +279,11 @@
   background-color: transparent;
   border: 2px solid #F1CDB3;
   border-radius: 100px;
-  padding: 15px 45px;
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 0.06em;
-  width: 200px;
+  width: 187px;
+  height: 52px;
   cursor: pointer;
 }
 
@@ -258,6 +306,7 @@
   font-weight: 400;
   letter-spacing: 0.06em;
   max-width: 400px;
+  text-align: center;
 }
 
 .help {
@@ -301,6 +350,7 @@
   letter-spacing: 0.06em;
   max-width: 310px;
   text-align: center;
+  align-items: center;
 }
 
 .help__short {
@@ -313,4 +363,148 @@
   align-items: center;
   flex-direction: column;
   gap: 30px;
+}
+
+.donation {
+  background-color: #F6F6F6;
+  padding: 80px 0 100px 0;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.donation__info {
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.donation__heading {
+  color: #545454;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  max-width: 300px;
+  letter-spacing: 0.06em;
+}
+
+.donation__subheading {
+  color: #545454;
+  max-width: 308px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+
+.donation__card {
+  max-width: 320px;
+  height: 43px;
+  width: 100%;
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+  gap: 15px;
+  background-color: #F1CDB3;
+  border-radius: 9px;
+}
+
+.donation__card-img {
+  width: 30px;
+  height: 23px;
+}
+
+.donation__number {
+  color: #545454;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+}
+
+.donation__text {
+  color: #B2B2B2;
+  font-family: 'Arial';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.button-block {
+  display: flex;
+  gap: 20px;
+}
+
+.footer {
+  background-image: linear-gradient(90deg, rgba(68, 54, 45, 1) 0%, rgba(50, 43, 41, 1) 47%, rgba(33, 31, 31, 1) 100%);
+  display: flex;
+  align-items: center;
+  gap: 137px;
+  padding: 23px 40px 0 40px;
+}
+
+.footer__image {
+  width: 300px;
+  height: 310px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 279px;
+}
+
+.footer__location {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 302px;
+}
+
+.footer__contacts .footer__icon {
+  width: 40px;
+  height: 32px;
+}
+
+.footer__location .footer__icon {
+  width: 22px;
+  height: 32px;
+}
+
+.footer__contacts div {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__location div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer__text {
+  color: #F1CDB3;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  max-width: 260px;
+  text-align: left;
+}
+
+.footer__heading {
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
 }
