@@ -1,0 +1,55 @@
+.help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0 100px 0;
+}
+
+.help__image {
+  width: 60px;
+  height: 60px;
+}
+
+.help__long {
+  display: flex;
+  gap: 120px;
+  margin: 60px 0 55px 0;
+}
+
+.help__long div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.help__text {
+  color: #545454;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+}
+
+.help__heading {
+  color: #545454;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  max-width: 310px;
+  text-align: center;
+  align-items: center;
+}
+
+.help__short {
+  display: flex;
+  gap: 120px;
+}
+
+.help__short div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}

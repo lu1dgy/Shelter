@@ -1,0 +1,25 @@
+.slider {
+  display: flex;
+  gap: 53px;
+  align-items: center;
+}
+
+.slider_arrow {
+  border: 2px solid #F1CDB3;
+  background-color: transparent;
+  font-size: 14px;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+}
+
+.slider_arrow:hover {
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
+}
+
+.slider_arrow:disabled {
+  background-color: transparent;
+  border: 2px solid #CDCDCD;
+}
