@@ -1,8 +1,18 @@
 .not-only {
-  padding: 90px 40px 0 40px;
+  background: linear-gradient(90deg, rgba(68, 54, 45, 1) 0%, rgba(50, 43, 41, 1) 47%, rgba(33, 31, 31, 1) 100%);
+  width: 100%;
+}
+
+.not-only__container {
+  padding: 60px 40px 0;
   display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
   gap: 42px;
-  background-image: linear-gradient(90deg, rgba(68, 54, 45, 1) 0%, rgba(50, 43, 41, 1) 47%, rgba(33, 31, 31, 1) 100%);
 }
 
 .not-only__image {
@@ -47,6 +57,7 @@
   line-height: 130%;
   letter-spacing: 0.06em;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .not-only__btn:hover {

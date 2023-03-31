@@ -1,9 +1,16 @@
 .pets {
   background-color: #f6f6f6;
-  padding: 80px 40px 100px;
+}
+
+.pets__container {
   display: flex;
   flex-direction: column;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
   align-items: center;
+  padding: 80px 40px 100px;
   gap: 60px;
 }
 
@@ -18,24 +25,21 @@
 }
 
 .pets__btn {
+  color: #292929;
+  background-color: #F1CDB3;
+  border: 0;
+  border-radius: 100px;
+  width: max-content;
+  cursor: pointer;
+  text-align: center;
+  padding: 13px 41px;
   font-weight: 400;
   font-size: 17px;
   line-height: 130%;
   color: #292929;
   letter-spacing: 0.06em;
-  background-color: #F1CDB3;
-  border: 0;
-  border-radius: 100px;
-  width: 261px;
-  height: 52px;
-  cursor: pointer;
-  text-align: center;
-  padding-top: 26px;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 130%;
-  color: #292929;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 
