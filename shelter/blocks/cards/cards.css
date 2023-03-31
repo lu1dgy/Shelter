@@ -48,3 +48,13 @@
   color: #545454;
   letter-spacing: 0.06em;
 }
+
+@media screen and (max-width: 1279px) {
+  .cards {
+    gap: 40px;
+  }
+
+  .card:last-child {
+    display: none;
+  }
+}

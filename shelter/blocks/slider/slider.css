@@ -24,3 +24,9 @@
   background-color: transparent;
   border: 2px solid #CDCDCD;
 }
+
+@media screen and (max-width: 1279px) {
+  .slider {
+    gap: 12px;
+  }
+}

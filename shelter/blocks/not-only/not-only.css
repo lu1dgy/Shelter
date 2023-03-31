@@ -63,3 +63,29 @@
 .not-only__btn:hover {
   background-color: #FDDCC4;
 }
+
+@media screen and (max-width: 1279px) {
+  .not-only__container {
+    max-width: 768px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 30px;
+  }
+
+  .not-only__heading {
+    align-self: flex-start;
+  }
+
+  .not-only-block {
+    margin: 0;
+    align-items: center;
+  }
+
+  .not-only__image {
+    position: relative;
+    width: 569px;
+    height: 593px;
+    left: 70px;
+  }
+}

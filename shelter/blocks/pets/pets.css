@@ -46,3 +46,11 @@
 .pets__btn:hover {
   background-color: #FDDCC4;
 }
+
+@media screen and (max-width: 1279px) {
+  .pets__container {
+    max-width: 768px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}

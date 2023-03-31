@@ -43,3 +43,11 @@
   line-height: 160%;
   max-width: 430px;
 }
+
+@media screen and (max-width: 1279px) {
+  .about__container {
+    max-width: 768px;
+    flex-direction: column-reverse;
+    gap: 80px;
+  }
+}
