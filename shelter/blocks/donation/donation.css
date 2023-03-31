@@ -74,7 +74,10 @@
   line-height: 18px;
 }
 
-.button-block {
-  display: flex;
-  gap: 20px;
+@media screen and (max-width: 1279px) {
+  .donation__container {
+    max-width: 768px;
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
 }

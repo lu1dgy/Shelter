@@ -52,9 +52,13 @@
 @media screen and (max-width: 1279px) {
   .cards {
     gap: 40px;
+    flex-wrap: nowrap;
+    max-width: 580px;
+    max-height: 1395px;
+    overflow: hidden;
   }
 
-  .card:last-child {
-    display: none;
+  .cards_pets {
+    flex-wrap: wrap;
   }
 }

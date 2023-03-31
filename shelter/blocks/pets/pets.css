@@ -14,6 +14,10 @@
   gap: 60px;
 }
 
+.pets__container_gap {
+  gap: 45px;
+}
+
 .pets__heading {
   color: #545454;
   font-size: 35px;
@@ -52,5 +56,10 @@
     max-width: 768px;
     padding-right: 30px;
     padding-left: 30px;
+  }
+
+  .pets__container_gap {
+    gap: 30px;
+    padding-bottom: 75px;
   }
 }
