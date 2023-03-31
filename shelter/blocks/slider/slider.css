@@ -1,21 +1,21 @@
 .slider {
   display: flex;
-  gap: 53px;
+  gap: 3.3125rem;
   align-items: center;
 }
 
 .slider_arrow {
-  border: 2px solid #F1CDB3;
+  border: 0.125rem solid #F1CDB3;
   background-color: transparent;
   font-family: 'Georgia';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 115%;
   letter-spacing: 0.06em;
-  border-radius: 100px;
-  width: 52px;
-  height: 52px;
+  border-radius: 6.25rem;
+  width: 3.25rem;
+  height: 3.25rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -32,16 +32,16 @@
 
 .slider_arrow:disabled {
   background-color: transparent;
-  border: 2px solid #CDCDCD;
+  border: 0.125rem solid #CDCDCD;
 }
 
 .button-block {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 @media screen and (max-width: 1279px) {
   .slider {
-    gap: 12px;
+    gap: 0.75rem;
   }
 }
