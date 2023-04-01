@@ -63,3 +63,12 @@
     flex-wrap: wrap;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .cards {
+    max-width: 16.875rem;
+    padding-right: .625rem;
+    padding-left: .625rem;
+    padding-top: 0;
+  }
+}

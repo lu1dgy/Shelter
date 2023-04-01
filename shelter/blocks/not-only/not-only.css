@@ -33,6 +33,7 @@
   line-height: 130%;
   color: #fff;
   font-weight: 400;
+  letter-spacing: 0.06em;
   max-width: 19.375rem;
 }
 
@@ -87,5 +88,32 @@
     width: 35.5625rem;
     height: 37.0625rem;
     left: 4.375rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .not-only__container {
+    max-width: 20rem;
+    padding-left: .625rem;
+    padding-right: .625rem;
+    gap: 6.4375rem;
+  }
+
+  .not-only__heading {
+    font-size: 1.5625rem;
+    line-height: 2rem;
+    text-align: center;
+    max-width: 14.375rem;
+    margin: 0 auto;
+  }
+
+  .not-only__subheading {
+    text-align: center;
+  }
+
+  .not-only__image {
+    width: 16.25rem;
+    height: 16.9856rem;
+    left: 1.125rem;
   }
 }

@@ -27,6 +27,7 @@
 
 .about__heading {
   color: #545454;
+  font-family: 'Georgia';
   font-weight: 400;
   font-size: 2.1875rem;
   line-height: 130%;
@@ -50,5 +51,34 @@
     max-width: 48rem;
     flex-direction: column-reverse;
     gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about__container {
+    max-width: 20rem;
+    padding-left: 22px;
+    padding-right: 20px;
+    padding-bottom: 2.625rem;
+    text-align: justify;
+    gap: 2.625rem;
+  }
+
+  .about__heading {
+    font-size: 1.5625rem;
+    text-align: center;
+    max-width: 18.125rem;
+    margin: 0 auto;
+  }
+
+  .about__subheading {
+    vertical-align: top;
+    max-width: 16.875rem;
+    margin: 0 auto;
+  }
+
+  .about__image {
+    width: 16.25rem;
+    height: 22.1rem;
   }
 }
