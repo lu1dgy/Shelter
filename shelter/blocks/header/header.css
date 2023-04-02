@@ -104,6 +104,14 @@
   border-bottom: 0.1875rem solid #F1CDB3;
 }
 
+.header__list-item:hover a {
+  color: #FAFAFA;
+}
+
+.header__list-item_pets:hover a {
+  color: #292929;
+}
+
 @media screen and (max-width: 1279px) {
   .header__container {
     padding-left: 1.875rem;
