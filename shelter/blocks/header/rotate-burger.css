@@ -1,0 +1,19 @@
+@keyframes rotate-burger {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotate-burger-reverse {
+  from {
+    transform: rotate(90deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}

@@ -1,7 +1,11 @@
 .slider {
   display: flex;
-  gap: 3.3125rem;
   align-items: center;
+}
+
+.item {
+  display: flex;
+  gap: 3.3125rem;
 }
 
 .slider__buttons {
@@ -46,7 +50,7 @@
 }
 
 @media screen and (max-width: 1279px) {
-  .slider {
+  .item {
     gap: 0.75rem;
   }
 }
@@ -58,7 +62,7 @@
 
   .slider__buttons {
     display: flex;
-    gap: 80px;
+    gap: 5rem;
     margin-top: .5rem;
   }
 

@@ -8,6 +8,15 @@
   width: 1.875rem;
   height: 1.375rem;
   display: none;
+  cursor: pointer;
+}
+
+.header__burger.active {
+  animation: rotate-burger 0.6s ease forwards;
+}
+
+.header__burger:not(.active) {
+  animation: rotate-burger-reverse 0.6s ease forwards;
 }
 
 .header__container {

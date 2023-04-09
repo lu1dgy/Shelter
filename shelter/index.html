@@ -56,29 +56,22 @@
       <section class='pets'>
         <div class="pets__container">
           <h2 class='pets__heading'>Our friends who <br> are looking for a house</h2>
-          <div class='slider'>
-            <button class='slider_arrow'>&#8592;</button>
-            <div class='cards'>
-              <div class='card'>
-                <img class='card__image' src='./images/pets-katrine.png' alt='petImage'>
-                <p class='card__name'>Katrine</p>
-                <button class='card__btn'>Learn more</button>
-              </div>
-              <div class='card'>
-                <img class='card__image' src='./images/pets-jennifer.png' alt='petImage'>
-                <p class='card__name'>Jennifer</p>
-                <button class='card__btn'>Learn more</button>
-              </div>
-              <div class='card'>
-                <img class='card__image' src='./images/pets-woody.png' alt='petImage'>
-                <p class='card__name'>Woody</p>
-                <button class='card__btn'>Learn more</button>
+          <div class="slider">
+            <button class='slider_arrow slider_arrow_left' id="btn-left">&#8592;</button>
+            <div class="cards__wrapper cards__maxheight" id="carousel-wrapper">
+              <div class="cards" id="carousel">
+                <div class="item" id="item-left">
+                </div>
+                <div class="item" id="item-active">
+                </div>
+                <div class="item" id="item-right">
+                </div>
               </div>
             </div>
-            <button class='slider_arrow'>&#8594;</button>
+            <button class="slider_arrow slider_arrow_right" id="btn-right">&#8594;</button>
             <div class='slider__buttons'>
-              <button class='slider_arrow slider_arrow_mobile'>&#8592;</button>
-              <button class='slider_arrow slider_arrow_mobile'>&#8594;</button>
+              <button class='slider_arrow slider_arrow_mobile slider_arrow_left' id='btn-left'>&#8592;</button>
+              <button class='slider_arrow slider_arrow_mobile slider_arrow_right' id='btn-right'>&#8594;</button>
             </div>
           </div>
           <a class='pets__btn' href='pets.html'>Get to know the rest</a>
@@ -170,6 +163,7 @@
         <img class='footer__image' src='./images/footer-puppy.png' alt='dog'>
       </div>
     </footer>
-    <script src='./scripts/index.js'></script>
+    <script src='./db.js' type='module'></script>
+    <script src='./scripts/index.js' type='module'></script>
   </body>
 </html>

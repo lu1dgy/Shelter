@@ -1,0 +1,73 @@
+@keyframes move-right {
+  from {
+    left: -975px;
+  }
+
+  to {
+    left: -1910px;
+  }
+}
+
+@keyframes move-left {
+  from {
+    left: -945px;
+  }
+
+  to {
+    left: 20px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  @keyframes move-right {
+    from {
+      left: -552px;
+    }
+
+    to {
+      left: -1120px;
+    }
+  }
+
+  @keyframes move-left {
+    from {
+      left: -550px;
+    }
+
+    to {
+      left: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  @keyframes move-right {
+    from {
+      left: -280px;
+    }
+
+    to {
+      left: -565px;
+    }
+  }
+
+  @keyframes move-left {
+    from {
+      left: -280px;
+    }
+
+    to {
+      left: 5px;
+    }
+  }
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 3s;
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 3s;
+}
