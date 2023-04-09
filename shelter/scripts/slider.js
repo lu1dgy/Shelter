@@ -6,15 +6,28 @@ const rightArrows = document.querySelectorAll("#btn-right");
 const carousel = document.querySelector("#carousel");
 const leftItem = document.querySelector("#item-left");
 const rightItem = document.querySelector("#item-right");
-const cardsContainer = document.querySelector('.cards__wrapper')
 const activeItem = document.querySelector("#item-active")
+const breakpoints = {
+  320: 1,
+  768: 2,
+  1280: 3,
+};
+
+//return random shuffled array
+const shuffle = (array) => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array.reverse();
+}
 
 const addTransition = (direction) => {
-  carousel.classList.add(`transition-${direction}`);
+  carousel.classList.add(`transition-${direction}`)
   unlistenArrows();
 };
-const moveLeft = () => addTransition("left");
-const moveRight = () => addTransition("right");
+const moveLeft = () => addTransition("left")
+const moveRight = () => addTransition("right")
 const listenArrows = () => {
   leftArrows.forEach(el => el.addEventListener('click', moveLeft))
   rightArrows.forEach(el => el.addEventListener('click', moveRight))
@@ -44,51 +57,48 @@ const createCardTemplate = (name, imageSrc) => {
 };
 
 const generateCards = (numCards) => {
+  const shuffledPets = shuffle(pets);
   for (let i = 0; i < numCards; i++) {
-    const pet = pets[i];
-    const leftCard = createCardTemplate(pet.name, pet.img);
+    const pet1 = shuffledPets[i];
+    const pet2 = shuffledPets[i + 1];
+    const pet3 = shuffledPets[i + 2];
+    const leftCard = createCardTemplate(pet1.name, pet1.img);
     leftItem.appendChild(leftCard);
-    const rightCard = createCardTemplate(pet.name, pet.img);
+    const rightCard = createCardTemplate(pet2.name, pet2.img);
     rightItem.appendChild(rightCard);
-    const activeCard = createCardTemplate(pet.name, pet.img);
+    const activeCard = createCardTemplate(pet3.name, pet3.img);
     activeItem.appendChild(activeCard);
   }
 }
+
 const deleteCards = () => {
   leftItem.innerHTML = ''
   rightItem.innerHTML = ''
   activeItem.innerHTML = ''
 } 
 
-//take number of cards in container
+//give container width
 const getWidth = () => document.querySelector('.pets__container').offsetWidth;
-const number = () => {
-  const width = getWidth();
-  switch (width) {
-    case 1280:
-      return 3;
-    case 768:
-      return 2;
-    case 320:
-      return 1;
-    default:
-      return 3;
+
+//give number of cards in container
+let currentWidth = getWidth();
+let currentCardsPerContainer = breakpoints[currentWidth];
+//generate start cards
+generateCards(currentCardsPerContainer)
+
+const handleResize = () => {
+  const newWidth = getWidth();
+  if (newWidth !== currentWidth) {
+    currentWidth = newWidth;
+    currentCardsPerContainer = breakpoints[currentWidth];
+    deleteCards();
+    generateCards(currentCardsPerContainer);
   }
 };
 
-//generate start cards
-generateCards(number())
 
-//return random shuffled array
-const shuffle = (array) => {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
 carousel.addEventListener("animationend", (animationEvent) => {
-  const cardsPerContainer = number();
+  const cardsPerContainer = currentCardsPerContainer;
   let changedItem;
   if (animationEvent.animationName === "move-left") {
     carousel.classList.remove("transition-left");
@@ -109,13 +119,7 @@ carousel.addEventListener("animationend", (animationEvent) => {
   listenArrows();
 });
 
-
-
-const handleResize = () => {
-  deleteCards()
-  generateCards(number())
-}
-window.addEventListener('resize', handleResize)
+window.addEventListener('resize', handleResize);
 
 burgerMenu.addEventListener('click', () => {
   burgerMenu.classList.toggle('active');
