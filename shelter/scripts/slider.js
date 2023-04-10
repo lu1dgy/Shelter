@@ -1,4 +1,6 @@
 import { pets } from '../db.js';
+import {shuffle} from '../utils/shuffleArr.js'
+import {createCardTemplate} from '../utils/createCard.js'
 
 const burgerMenu = document.querySelector('.header__burger');
 const leftArrows = document.querySelectorAll("#btn-left");
@@ -12,15 +14,6 @@ const breakpoints = {
   768: 2,
   1280: 3,
 };
-
-//return random shuffled array
-const shuffle = (array) => {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array.reverse();
-}
 
 const addTransition = (direction) => {
   carousel.classList.add(`transition-${direction}`)
@@ -36,25 +29,6 @@ const unlistenArrows = () => {
   leftArrows.forEach(el => el.removeEventListener('click', moveLeft))
   rightArrows.forEach(el => el.removeEventListener('click', moveRight))
 }
-
-const createCardTemplate = (name, imageSrc) => {
-  const card = document.createElement('div');
-  card.classList.add('card');
-  const image = document.createElement('img');
-  image.classList.add('card__image');
-  image.setAttribute('src', imageSrc);
-  image.setAttribute('alt', 'petImage');
-  const nameElement = document.createElement('p');
-  nameElement.classList.add('card__name');
-  nameElement.textContent = name;
-  const button = document.createElement('button');
-  button.classList.add('card__btn');
-  button.textContent = 'Learn more';
-  card.appendChild(image);
-  card.appendChild(nameElement);
-  card.appendChild(button);
-  return card;
-};
 
 const generateCards = (numCards) => {
   const shuffledPets = shuffle(pets);
@@ -95,7 +69,6 @@ const handleResize = () => {
     generateCards(currentCardsPerContainer);
   }
 };
-
 
 carousel.addEventListener("animationend", (animationEvent) => {
   const cardsPerContainer = currentCardsPerContainer;

@@ -10,7 +10,13 @@
 }
 
 .cards_pets {
+  display: flex;
   gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  overflow: hidden;
+  max-height: 920px;
 }
 
 .card {
@@ -72,6 +78,7 @@
 
   .cards_pets {
     flex-wrap: wrap;
+    max-height: 87.1875rem;
   }
 }
 

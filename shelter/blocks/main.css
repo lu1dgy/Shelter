@@ -20,3 +20,7 @@ html {
 .main {
   width: 100%;
 }
+
+.wrap {
+  flex-wrap: wrap;
+}
