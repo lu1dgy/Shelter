@@ -143,6 +143,13 @@
 
   .popup__container {
     max-height: 350px;
+    max-width: 672px;
+    padding: 10px;
+  }
+
+  .popup__close-btn {
+    top: -55px;
+    right: -25px;
   }
 }
 
@@ -166,5 +173,18 @@
     margin-bottom: 10px;
     align-self: flex-start;
     margin-left: 25px;
+  }
+
+  .popup__container {
+    max-width: 240px;
+  }
+
+  .popup__close-btn {
+    top: -55px;
+    right: -25px;
+  }
+
+  .popup__function {
+    text-align: center;
   }
 }
