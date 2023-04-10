@@ -2,4 +2,4 @@
 
 ## It's responsive page of Shelter maden for Rsschool.
 
-<a href="https://lu1dgy.github.io/Shelter/shelter">Link to deploy</a>
+<a href="https://lu1dgy.github.io/Shelter/shelter/pages">Link to deploy</a>
