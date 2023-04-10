@@ -9,6 +9,7 @@
   height: 1.375rem;
   display: none;
   cursor: pointer;
+  z-index: 2;
 }
 
 .header__burger.active {
@@ -137,10 +138,45 @@
   }
 
   .header__nav {
-    display: none;
+    opacity: 0;
+  }
+
+  .header__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #292929;
+    width: 320px;
+    height: 100%;
+    font-size: 2rem;
+    line-height: 52px;
+    font-family: Arial;
+    font-weight: 400;
+    z-index: 1;
+  }
+
+  .header__nav_visible {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
   }
 
   .header__burger {
     display: block;
+  }
+
+  .header__list-item_pets:hover a {
+    color: #FAFAFA;
+  }
+
+  .header__list-item_active_pets a {
+    color: #FAFAFA;
+  }
+
+  .header__list-item_pets a {
+    color: #CDCDCD;
   }
 }

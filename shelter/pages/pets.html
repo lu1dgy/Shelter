@@ -17,11 +17,11 @@
             <p class='header__description_pets'>Shelter for pets in Boston</p>
           </div>
         </a>
-        <nav class='header__nav'>
+        <nav class='header__nav header__nav_hidden'>
           <ul class='header__list'>
-            <li class='header__list-item_pets'><a href='../index.html'>About the shelter</a></li>
+            <li class='header__list-item_pets'><a href='index.html'>About the shelter</a></li>
             <li class='header__list-item_pets header__list-item_active_pets'><a href='pets.html'>Our pets</a></li>
-            <li class='header__list-item_pets'><a href='../index.html#help'>Help the shelter</a></li>
+            <li class='header__list-item_pets'><a href='index.html#help'>Help the shelter</a></li>
             <li class='header__list-item_pets'><a href='#contacts'>Contacts</a></li>
           </ul>
         </nav>
@@ -73,6 +73,28 @@
         <img class='footer__image' src='../assets/images/footer-puppy.png' alt='dog'>
       </div>
     </footer>
+    <div class="popup">
+      <div class="popup__container">
+        <div type="button" class="popup__close-btn"></div>
+        <img src='../assets/images/pets-jennifer.png' class='popup__img' alt='popupImg'>
+        <div class="popup__info">
+          <h3 class='popup__name'>Jennifer</h3>
+          <p class='popup__function'>Dog - Labrador</p>
+          <p class='popup__text'>Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to
+            run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+          <ul class='popup__list'>
+            <li class='popup__list-item popup__list-item'><span class='popup__bold'>Age:</span> <span class='popup__age'></span> </li>
+            <li class='popup__list-item'><span class='popup__bold'>Inoculations:</span> <span class='popup__inoculations'></span></li>
+            <li class='popup__list-item'><span class='popup__bold'>Diseases:</span> <span class='popup__diseases'></span></li>
+            <li class='popup__list-item'><span class='popup__bold'>Parasites:</span> <span class='popup__parasites'></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="popup__overlay">
+      </div>
+    </div>
+    <script src='../scripts/popup.js' type='module'></script>
+    <script src='../scripts/burger.js' type='module'></script>
     <script src='../scripts/pagination.js' type='module'></script>
   </body>
 </html>
