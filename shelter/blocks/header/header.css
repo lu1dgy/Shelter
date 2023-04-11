@@ -195,7 +195,7 @@
     align-items: center;
     box-sizing: border-box;
     background-color: transparent;
-    position: fixed;
+    position: absolute;
     top: 45px;
     right: 20px;
   }
