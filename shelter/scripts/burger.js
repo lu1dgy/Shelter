@@ -1,16 +1,16 @@
 const burgerMenu = document.querySelector('.header__burger')
-const navBar = document.querySelector('.header__nav')
+const navBar = document.querySelector('.header__list')
 const navLinks = document.querySelectorAll('.header__nav a')
 
 const handleBurger = () => {
   burgerMenu.classList.toggle('active')
-  navBar.classList.toggle('header__nav_visible')
-  document.body.style.overflow = navBar.classList.contains('header__nav_visible') ? 'hidden' : 'visible'
+  navBar.classList.toggle('header__list_visible')
+  document.body.style.overflow = navBar.classList.contains('header__list_visible') ? 'hidden' : 'visible'
 }
 
 const closeNav = () => {
   burgerMenu.classList.remove('active')
-  navBar.classList.remove('header__nav_visible')
+  navBar.classList.remove('header__list_visible')
   document.body.style.overflow = 'visible'
 }
 
