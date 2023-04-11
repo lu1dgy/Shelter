@@ -20,6 +20,17 @@
   animation: rotate-burger-reverse 0.6s ease forwards;
 }
 
+.header__burger.active+.header__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+
+}
+
 .header__container {
   max-width: 80rem;
   width: 100%;
@@ -167,24 +178,49 @@
     transition: all 0.3s ease-in-out;
   }
 
+  .header__list_pets {
+    background-color: #FAFAFA;
+  }
+
   .header__list_visible {
     transform: translateX(0%);
     transition: all 0.3s ease-in-out;
   }
 
   .header__burger {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: transparent;
+    position: fixed;
+    top: 45px;
+    right: 20px;
   }
 
+  .header__burger-line {
+    width: 30px;
+    height: 2px;
+    pointer-events: none;
+    background-color: #F1CDB3;
+  }
+
+  .header__burger_pets {
+    background-color: #292929;
+  }
+
+
   .header__list-item_pets:hover a {
-    color: #FAFAFA;
+    color: #545454;
   }
 
   .header__list-item_active_pets a {
-    color: #FAFAFA;
+    color: #292929;
   }
 
   .header__list-item_pets a {
-    color: #CDCDCD;
+    color: #292929;
   }
 }

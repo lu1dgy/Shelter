@@ -22,7 +22,6 @@ navLinks.forEach((link) => {
   })
 })
 
-
 const handleOutsideClick = (e) => {
   if(burgerMenu.classList.contains('active')) {
     if (e.target !== navBar && !navBar.contains(e.target) && e.target !== burgerMenu) {

@@ -18,14 +18,19 @@
           </div>
         </a>
         <nav class='header__nav header__nav_hidden'>
-          <ul class='header__list'>
+          <ul class='header__list header__list_pets'>
             <li class='header__list-item_pets'><a href='index.html'>About the shelter</a></li>
             <li class='header__list-item_pets header__list-item_active_pets'><a href='pets.html'>Our pets</a></li>
             <li class='header__list-item_pets'><a href='index.html#help'>Help the shelter</a></li>
             <li class='header__list-item_pets'><a href='#contacts'>Contacts</a></li>
           </ul>
         </nav>
-        <img class='header__burger' src='../assets/images/burger.png' alt='menu-btn'>
+        <button class="header__burger">
+          <div class="header__burger-line header__burger_pets"></div>
+          <div class="header__burger-line header__burger_pets"></div>
+          <div class="header__burger-line header__burger_pets"></div>
+        </button>
+        <div class='header__overlay'></div>
       </div>
     </header>
     <main class='main'>
@@ -75,7 +80,7 @@
     </footer>
     <div class="popup">
       <div class="popup__container">
-        <button type="button" class="popup__close-btn"></button>
+        <div type="button" class="popup__close-btn"></div>
         <img src='../assets/images/pets-jennifer.png' class='popup__img' alt='popupImg'>
         <div class="popup__info">
           <h3 class='popup__name'>Jennifer</h3>
